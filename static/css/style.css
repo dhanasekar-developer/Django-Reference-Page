@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap&family=Protest+Riot&display=swap&family=Kavivanar&family=Akaya+Telivigala&display=swap&family=Seymour+One&display=swap&family=Lugrasimo&display=swap&family=Edu+NSW+ACT+Foundation:wght@400..700');
+/* 
+font-family: "Mina", sans-serif;
+font-family: "Kavivanar", cursive;
+font-family: "Protest Riot", sans-serif;
+font-family: "Akaya Telivigala", system-ui;
+font-family: "Lugrasimo", cursive;
+ font-family: "Edu NSW ACT Foundation", cursive;
+
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background: #fbcbc2;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+header{
+    position: sticky !important;
+    top: 0px !important;
+}
+.navTitle{
+    color: #9c061a;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Lugrasimo", cursive;
+    margin: 0px !important;
+}
+nav>ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin: 0px !important;
+}
+.logoutBtn,nav>ul>li{
+    list-style: none;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+}
+.logoutBtn,nav>ul>li>a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s;
+}
+.logoutBtn:hover,nav>ul>li>a:hover{
+    color: #9c061a;
+}
+.logoutBtn{
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.bodyContent{
+    padding: 20px;
+    min-height: 95dvh;
+}
+.heading{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Akaya Telivigala", system-ui;
+    background: #9c061a;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    /* display: inline; */
+    text-align: center;
+}
+.blogCart{
+    height: 240px;
+    width: 700px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background: #ffe5e0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.blogCartContent{
+    width: 330px;
+
+}
+.postTitle{
+    color: #9c061a;
+    font-size: 25px;
+    font-family: "Akaya Telivigala", system-ui;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.postContent{
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 0 !important;
+    font-size: 18px;
+    letter-spacing: -0.5px !important;
+}
+.postImgDiv{
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+}
+.postImg{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.readmoreBtn{
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    font-family: "Akaya Telivigala", system-ui !important;
+}
+footer{
+    background: #9c061a;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: "Akaya Telivigala", system-ui;
+}
+.detailhead{
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-size: 50px;
+}
+.post_imgDiv{
+    width: 600px;
+    height: auto;
+}
+.post_img{
+    width: 100%;
+    height: 100%;
+}
+.cart_content{
+    width: 600px;
+}
+.post_title{
+    width: 600px;
+    color: #9c061a;
+    font-size: 25px;
+    font-family: "Akaya Telivigala", system-ui;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.post_content,.postDate{
+    width: 600px;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 0 !important;
+    font-size: 18px;
+    letter-spacing: -0.5px !important;
+}
+.post_date{
+    width: 600px;
+}
+.submitBtn{
+    margin: 20px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 18px;
+}
+#id_username{
+    border-radius: 5px;
+}
+.btns{
+    margin: 0 20px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 18px;
+}
+table{
+    margin-top:  50px;
+}
+table>thead>tr>th{
+    border: 2px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+table>tbody>tr>td{
+    border: 2px solid #000;
+    padding: 10px;
+    text-align: center;
+
+}
+#colorField{
+    height: 30px;
+    width: 30px;
+}

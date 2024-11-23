@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Post New
+{% endblock %}
+
+{% block content %}
+    <h1>New Post</h1>
+    <form method="post" action="{% url 'posts:post_new' %}" enctype="multipart/form-data" class="form-with-validation col-md-4">
+        {% csrf_token %}
+        {{form}}
+        <input type="color" id="colorField" onchange="colorFieldFunction()">
+        <input type="submit" value="Add Data" class="btn btn-success mt-2">
+    </form>
+{% endblock %}

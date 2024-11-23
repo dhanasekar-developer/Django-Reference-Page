@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{post.title}}
+{% endblock %}
+
+
+{% block content %}
+    <h1 class="heading">See The Latest Posts Hire</h1>
+    <section>
+        <div class="post_imgDiv">
+            <img src="{{post.banner.url}}" class="post_img">
+        </div>
+        <div class="cart_content">
+            <h2 class="post_title">{{post.title}}</h2>
+            <p class="post_content">{{post.body}}</p>
+            <span class="post_date">{{post.date}} by {{post.author}}</span>
+        </div>
+        
+    </section>
+
+{% endblock %}

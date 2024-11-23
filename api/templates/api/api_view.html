@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Api Data
+{% endblock %}
+{% block content %}
+    <h1>Api Data</h1>
+    <div style="display: flex;">
+        <h3>{{empcode}} - {{name}}</h3>
+        <button class="btns" style="margin: none !important;" onclick="loadData({{empcode}})">load</button>
+    </div>
+
+    <div class="tableView" id="tableView">
+        
+    </div>
+    
+   
+{% endblock %}

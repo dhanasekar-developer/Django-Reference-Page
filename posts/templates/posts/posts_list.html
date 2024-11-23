@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    post list
+{% endblock %}
+
+
+{% block content %}
+    <h1 class="heading">See The Latest Posts Hire</h1>
+    <section style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-evenly;">
+        {% for post in posts %}
+            <section class="blogCart">
+                <div class="blogCartContent">
+                    <h2 class="postTitle">{{post.title}}</h2>
+                    <p class="postContent">{{post.body}}</p>
+                    <span class="postDate">{{post.date}} by {{ post.author }}</span>
+                    <a href="{% url 'posts:page' slug=post.slug %}" class="readmoreBtn">Readmore</a>
+                </div>
+                <div class="postImgDiv">
+                    <img src="{{ post.banner.url }}" alt="{{ post.title }}" class="postImg">
+                </div>
+            </section>
+        {% endfor %}
+    </section>
+
+{% endblock %}
